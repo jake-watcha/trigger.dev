@@ -13,7 +13,7 @@ import { HostConnection, TimeoutError } from "./connection";
 import { triggerRunLocalStorage } from "./localStorage";
 import { ContextLogger } from "./logger";
 import { Trigger, TriggerOptions } from "./trigger";
-import { TriggerContext, TriggerFetch } from "./types";
+import { IODefinitionMap, TriggerContext, TriggerFetch } from "./types";
 import { generateErrorMessage, ErrorMessageOptions } from "zod-error";
 import { readFile } from "node:fs/promises";
 import {
@@ -31,9 +31,12 @@ const zodErrorMessageOptions: ErrorMessageOptions = {
 
 type RunOnceOutput = { idempotencyKey: string; hasRun: boolean; output?: any };
 
-export class TriggerClient<TSchema extends z.ZodTypeAny> {
-  #trigger: Trigger<TSchema>;
-  #options: TriggerOptions<TSchema>;
+export class TriggerClient<
+  TSchema extends z.ZodTypeAny,
+  TIO extends IODefinitionMap
+> {
+  #trigger: Trigger<TSchema, TIO>;
+  #options: TriggerOptions<TSchema, TIO>;
 
   #connection?: HostConnection;
   #serverRPC?: ZodRPC<typeof ServerRPCSchema, typeof HostRPCSchema>;
@@ -119,7 +122,10 @@ export class TriggerClient<TSchema extends z.ZodTypeAny> {
     }
   >();
 
-  constructor(trigger: Trigger<TSchema>, options: TriggerOptions<TSchema>) {
+  constructor(
+    trigger: Trigger<TSchema, TIO>,
+    options: TriggerOptions<TSchema, TIO>
+  ) {
     this.#trigger = trigger;
     this.#options = options;
 

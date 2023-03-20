@@ -1,7 +1,7 @@
 {
-  "name": "@trigger.dev/github",
+  "name": "@trigger.dev/openai",
   "version": "0.1.28-next.0",
-  "description": "The official GitHub integration for Trigger.dev",
+  "description": "The official Linear integration for Trigger.dev",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "publishConfig": {
@@ -29,8 +29,8 @@
     "build:tsup": "tsup"
   },
   "dependencies": {
-    "@octokit/webhooks": "^10.4.0",
-    "octokit": "^2.0.14",
+    "@linear/sdk": "^2.6.0",
+    "openai": "^3.2.1",
     "zod": "^3.20.2"
   }
 }

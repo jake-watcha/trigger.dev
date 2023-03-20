@@ -1,10 +1,20 @@
 import { TriggerClient } from "../client";
 import { LogLevel } from "internal-bridge";
 import { TriggerEvent } from "../events";
-import type { TriggerContext } from "../types";
+import type {
+  IODefinitionFunction,
+  IODefinitionMap,
+  IOMap,
+  TriggerContext,
+} from "../types";
 import { z } from "zod";
 
-export type TriggerOptions<TSchema extends z.ZodTypeAny> = {
+export type { IODefinitionFunction, IODefinition } from "../types";
+
+export type TriggerOptions<
+  TSchema extends z.ZodTypeAny,
+  TIO extends IODefinitionMap
+> = {
   id: string;
   name: string;
   on: TriggerEvent<TSchema>;
@@ -18,14 +28,23 @@ export type TriggerOptions<TSchema extends z.ZodTypeAny> = {
    */
   triggerTTL?: number;
 
-  run: (event: z.infer<TSchema>, ctx: TriggerContext) => Promise<any>;
+  io?: TIO;
+
+  run: (
+    event: z.infer<TSchema>,
+    ctx: TriggerContext,
+    io: IOMap<TIO>
+  ) => Promise<any>;
 };
 
-export class Trigger<TSchema extends z.ZodTypeAny> {
-  options: TriggerOptions<TSchema>;
-  #client: TriggerClient<TSchema> | undefined;
+export class Trigger<
+  TSchema extends z.ZodTypeAny,
+  TIO extends IODefinitionMap
+> {
+  options: TriggerOptions<TSchema, TIO>;
+  #client: TriggerClient<TSchema, TIO> | undefined;
 
-  constructor(options: TriggerOptions<TSchema>) {
+  constructor(options: TriggerOptions<TSchema, TIO>) {
     this.options = options;
   }
 
@@ -110,4 +129,16 @@ export class Trigger<TSchema extends z.ZodTypeAny> {
 
     return { status: "valid" as const, apiKey };
   }
+}
+
+export function makeIOConnection<TCallbackArgs>(options: {
+  service: string;
+  auth: "apiKey" | "accessToken" | "oauth2" | "none" | "basic";
+}): IODefinitionFunction<TCallbackArgs> {
+  return (callback) => {
+    return {
+      ...options,
+      io: callback,
+    };
+  };
 }

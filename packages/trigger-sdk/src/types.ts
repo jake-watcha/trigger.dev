@@ -86,6 +86,7 @@ export interface TriggerContext {
   kv: TriggerKeyValueStorage;
   globalKv: TriggerKeyValueStorage;
   runKv: TriggerKeyValueStorage;
+  env: Record<string, string>;
 }
 
 export interface TriggerLogger {
@@ -94,3 +95,41 @@ export interface TriggerLogger {
   warn(message: string, properties?: Record<string, any>): Promise<void>;
   error(message: string, properties?: Record<string, any>): Promise<void>;
 }
+
+export type IODefinitionConfig = {
+  abortSignal: AbortSignal;
+};
+
+export type IODefinition<TCallbackArgs, TReturnType> = {
+  service: string;
+  auth: string;
+  io: (args: TCallbackArgs, config: IODefinitionConfig) => TReturnType;
+};
+
+export type IOTask = {
+  title?: string;
+  subtitle?: string;
+  params?: Record<string, any>;
+  readonly idempotencyKey: string;
+  status: "pending" | "running" | "completed" | "failed";
+  error?: string;
+  retryCount: number;
+  retry?: boolean;
+  runTask: <T>(
+    id: string,
+    callback: (task: IOTask) => Promise<T>
+  ) => Promise<T>;
+};
+
+export type IODefinitionFunction<TCallbackArgs> = <TReturnType>(
+  callback: (args: TCallbackArgs, config: IODefinitionConfig) => TReturnType
+) => IODefinition<TCallbackArgs, TReturnType>;
+
+export type IOMap<T extends Record<string, IODefinition<any, any>>> = {
+  [K in keyof T]: <R>(
+    key: string,
+    io: (service: ReturnType<T[K]["io"]>, task: IOTask) => R
+  ) => R;
+};
+
+export type IODefinitionMap = Record<string, IODefinition<any, any>>;

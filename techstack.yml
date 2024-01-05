@@ -1,11 +1,12 @@
 repo_name: jake-watcha/trigger.dev
 report_id: 2831ac6fbf52d65bdceb3bd2082415bd
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-10T04:55:15+00:00'
+timestamp: '2024-01-05T09:00:57+00:00'
 requested_by: ericallam
 provider: github
 branch: main
-detected_tools_count: 99
+detected_tools_count: 100
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/jake-watcha/trigger.dev
   detection_source: Repo Metadata
 - name: SQL
   description: It is a domain-specific language used in programming
@@ -34,7 +37,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
-  detection_source: apps/webapp/prisma/migrations/20230313173750_added_hosted_waitlist_bool/migration.sql
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/prisma/migrations/20230213221827_init/migration.sql
+  detection_source: apps/integrations/prisma/migrations/20230213221827_init/migration.sql
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 22:40:44.000000000 Z
 - name: TypeScript
@@ -46,6 +50,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/jake-watcha/trigger.dev
   detection_source: Repo Metadata
 - name: Autoprefixer
   description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
@@ -55,7 +60,8 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
-  detection_source: package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
 - name: ExpressJS
@@ -69,8 +75,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/1163/hashtag.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 15:54:36.000000000 Z
 - name: Node.js
@@ -82,7 +88,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/Dockerfile
+  detection_source: apps/integrations/Dockerfile
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-21 10:25:36.000000000 Z
 - name: React
@@ -95,8 +102,8 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
-  detection_source_url: apps/webapp/package.json
-  detection_source: packages/emails/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
 - name: Apache Pulsar
@@ -109,6 +116,7 @@ tools:
   category: Data Stores
   sub_category: Message Queue
   image_url: https://img.stackshare.io/service/5706/wFcLUbwd_400x400.jpg
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/pulsar/docker-compose.yml
   detection_source: pulsar/docker-compose.yml
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-20 17:23:33.000000000 Z
@@ -120,6 +128,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Query Languages
   image_url: https://img.stackshare.io/service/3820/12972006.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/integrations/shopify/package.json
   detection_source: integrations/shopify/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-01-30 21:23:04.000000000 Z
@@ -133,8 +142,8 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/8680/Logo_Symbol_White.jpg
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-23 13:46:40.000000000 Z
 - name: Redis
@@ -146,6 +155,7 @@ tools:
   category: Data Stores
   sub_category: In-Memory Databases
   image_url: https://img.stackshare.io/service/1031/default_cbce472cd134adc6688572f999e9122b9657d4ba.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/docker-compose.yml
   detection_source: docker-compose.yml
   last_updated_by: Eric Allam
   last_updated_on: 2022-12-30 15:58:29.000000000 Z
@@ -158,7 +168,8 @@ tools:
   category: Application Hosting
   sub_category: Realtime Backend / API
   image_url: https://img.stackshare.io/service/11381/no-img-open-source.png
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/wss/package.json
+  detection_source: apps/wss/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2022-12-08 13:53:35.000000000 Z
 - name: Cypress
@@ -172,7 +183,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/service/9231/default_66c5c1a197dcd0232e41e4ab6299d119b4e165b3.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -185,6 +196,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev
   detection_source: Repo Metadata
 - name: Dotenv
   description: Loads environment variables from .env for Nodejs projects
@@ -195,7 +207,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Server Configuration and Automation
   image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
-  detection_source: apps/wss/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-03-08 13:00:57.000000000 Z
 - name: ESLint
@@ -207,7 +220,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
-  detection_source: config-packages/eslint-config-custom/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 14:48:12.000000000 Z
 - name: Git
@@ -218,6 +232,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev
   detection_source: Repo Metadata
 - name: Git-Repo
   description: Manage Gitlab, GitHub and Bitbucket from the command line
@@ -228,6 +243,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Git Tools
   image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/trigger-sdk/package.json
   detection_source: packages/trigger-sdk/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2022-12-08 13:53:35.000000000 Z
@@ -240,6 +256,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/service/830/jest.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -251,7 +268,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Tools for GitHub
   image_url: https://img.stackshare.io/service/9827/octokit-dotnet_2.png
-  detection_source: integrations/github/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
 - name: Prettier
@@ -264,8 +282,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: apps/webapp/package.json
-  detection_source: package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-01 14:46:04.000000000 Z
 - name: Sentry
@@ -276,7 +294,8 @@ tools:
   category: Monitoring
   sub_category: Exception Monitoring
   image_url: https://img.stackshare.io/service/191/default_9262326592c97828a2a4299dec085a3674dd05f4.png
-  detection_source: apps/wss/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-24 17:49:02.000000000 Z
 - name: nodemon
@@ -289,8 +308,8 @@ tools:
   category: Monitoring
   sub_category: node.js Application Monitoring
   image_url: https://img.stackshare.io/service/5577/preview.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-03-08 13:00:57.000000000 Z
 - name: npm
@@ -301,6 +320,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -313,7 +333,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/2438/lodash.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-08 17:36:23.000000000 Z
@@ -327,7 +347,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/10010/Screen_Shot_2012-07-31_at_21.57.03__400x400.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-14 12:24:23.000000000 Z
@@ -340,6 +360,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev
   detection_source: Repo Metadata
 - name: Zod
   description: TypeScript-first schema validation
@@ -347,7 +368,8 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/48521/default_eea961e4c374e68a1c7eb5bbc9e4a39920890342.png
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 14:48:12.000000000 Z
 - name: chalk
@@ -356,7 +378,8 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/8072/13122722.png
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
+  detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
 - name: date-fns
@@ -368,6 +391,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/10865/default_5551fb8853689f607a2bc0d5a09355d5a3d52bf0.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-08 17:36:23.000000000 Z
@@ -381,8 +405,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18428/default_9499465ee49aaffadf126149b962e9838bc4a993.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/wss/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-03-08 13:00:57.000000000 Z
 - name: "@testing-library/jest-dom"
@@ -395,7 +419,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17424/default_1cdcda15ebb7caed879f8340bc212b44c4ec9dac.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:13:07.000000000 Z
@@ -410,7 +434,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16549/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -424,7 +448,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18206/default_dfaa3c3f19039c5391ee1a13529324eaa2685e7f.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -438,8 +462,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16332/default_e8196e273db814cf9be505b35dec386fafb0dbaa.png
-  detection_source_url: apps/wss/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/wss/package.json
+  detection_source: apps/wss/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-01-12 13:22:06.000000000 Z
 - name: "@types/eslint"
@@ -452,8 +476,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18156/default_9663441986aa2be78296ccf617e43ef9e612b34e.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-26 18:37:11.000000000 Z
 - name: "@types/express"
@@ -466,8 +490,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16100/default_d947c1690e032a288145c7e2491999eab3ea8ede.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-26 18:37:11.000000000 Z
 - name: "@types/fs-extra"
@@ -480,7 +504,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16170/default_1f3a2fc7d882e29a43394ecdf491b8989ea3f0fa.png
-  detection_source_url: packages/create-trigger/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
   detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
@@ -494,7 +518,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16530/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
-  detection_source_url: packages/create-trigger/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
   detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
@@ -508,7 +532,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -522,7 +546,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16959/default_caea01ce44a5fd1bb200d8fc0f8f2a1695b4e569.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -536,7 +560,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15945/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -550,7 +574,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17650/default_894a45ad01fa93ac472db719cb1ef1b89f2924f0.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -564,8 +588,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18064/image.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-26 18:37:11.000000000 Z
 - name: "@types/node"
@@ -578,8 +602,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-03-08 13:00:57.000000000 Z
 - name: "@types/node-fetch"
@@ -592,8 +616,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16459/default_5ffcf8d02a3454bd25d27d236025c6d078c3b672.png
-  detection_source_url: apps/webapp/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
 - name: "@types/qs"
@@ -606,7 +630,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17032/default_d17bbf7e4f3b102e29ff09c01b8165e7ba600319.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -620,8 +644,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
-  detection_source_url: apps/webapp/package.json
-  detection_source: packages/emails/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
 - name: "@types/react-dom"
@@ -634,7 +658,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15946/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -648,8 +672,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16257/default_ab17554b7e80af3d234b14168ed61e75d43f8eee.png
-  detection_source_url: apps/wss/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/wss/package.json
+  detection_source: apps/wss/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-01-12 13:22:06.000000000 Z
 - name: "@types/ws"
@@ -662,8 +686,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16711/default_9cd376f2200c8f6c32ebd690bb6c290852dee64d.png
-  detection_source_url: apps/wss/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/wss/package.json
+  detection_source: apps/wss/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-01-12 13:22:06.000000000 Z
 - name: "@typescript-eslint/eslint-plugin"
@@ -676,7 +700,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-26 18:37:11.000000000 Z
@@ -690,7 +714,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16186/default_1f3a2fc7d882e29a43394ecdf491b8989ea3f0fa.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 14:48:12.000000000 Z
@@ -704,10 +728,24 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16857/default_627f05e6a07ce29fc9f119417270f38e8aa5c5e2.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-08 16:26:01.000000000 Z
+- name: chalk
+  description: Terminal string styling done right
+  package_url: https://www.npmjs.com/chalk
+  version: 5.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15813/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
+  detection_source: packages/create-trigger/package.json
+  last_updated_by: Eric Allam
+  last_updated_on: 2023-02-24 13:13:41.000000000 Z
 - name: classnames
   description: A simple utility for conditionally joining classNames together
   package_url: https://www.npmjs.com/classnames
@@ -718,7 +756,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15942/default_4040fefea2f98006727f63d042275b96a275ab2d.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -732,7 +770,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17636/default_b06ec1ccf403dac1459596b8571a4fb6a46577e1.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-08 16:26:01.000000000 Z
@@ -746,8 +784,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15829/default_50135978d26eba7c09093ceb23b96d522898e4eb.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: packages/internal-cli/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-23 13:46:40.000000000 Z
 - name: compression
@@ -760,7 +798,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16187/default_9a7a7dcd69c12c746dc4000dc4d1b75758079c9f.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -774,7 +812,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16041/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 15:54:36.000000000 Z
@@ -788,7 +826,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15828/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-01-11 13:27:00.000000000 Z
@@ -802,7 +840,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18333/default_cef8b737c55fccc3604e91ce246aef30fc604c73.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
@@ -816,7 +854,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17189/default_183829c5079b84333a720d8590a328efc043ba0e.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -830,8 +868,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15852/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
-  detection_source_url: generated-integrations/airtable/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/generated-integrations/airtable/package.json
+  detection_source: generated-integrations/airtable/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-15 14:01:19.000000000 Z
 - name: eslint-config-prettier
@@ -844,8 +882,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: config-packages/eslint-config-custom/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-03-08 13:00:57.000000000 Z
 - name: eslint-plugin-cypress
@@ -858,7 +896,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18548/default_0998c3a5bd64540d478b8f189bd9d22c3c17b6a0.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -872,7 +910,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-19 14:36:09.000000000 Z
@@ -886,7 +924,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15885/default_1d65e37e65b7f80761374f0202776043277d505d.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-19 14:36:09.000000000 Z
@@ -900,7 +938,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: config-packages/eslint-config-custom/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/config-packages/eslint-config-custom/package.json
   detection_source: config-packages/eslint-config-custom/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -914,7 +952,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16132/default_3d197518f6bb529bfcc1b685e2cefbdfe83ff108.png
-  detection_source_url: packages/create-trigger/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
   detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
@@ -928,8 +966,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 15:54:36.000000000 Z
 - name: fs-extra
@@ -943,7 +981,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15836/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
-  detection_source_url: packages/create-trigger/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
   detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
@@ -957,7 +995,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15875/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -971,7 +1009,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15911/default_4dc9671df0093fd7061f6455afdf054e6cc9dacb.png
-  detection_source_url: packages/create-trigger/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
   detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
@@ -985,7 +1023,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16522/default_4e3259350c525d1d859fa80a938000081d7c9db8.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2022-12-30 15:58:29.000000000 Z
@@ -999,7 +1037,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16875/default_ebf16e0c8af5e95030933d9e01479224b6665289.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:13:07.000000000 Z
@@ -1013,7 +1051,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16155/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:13:07.000000000 Z
@@ -1027,7 +1065,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17004/default_43f23668e39c9b3381720c9c76540776b8a49167.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 15:54:36.000000000 Z
@@ -1041,7 +1079,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16065/default_c7b204838197013798409fa2b4dafce450edc7fb.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-08 16:26:01.000000000 Z
@@ -1055,8 +1093,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16097/default_c7b204838197013798409fa2b4dafce450edc7fb.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-15 14:57:38.000000000 Z
 - name: nanoid
@@ -1069,7 +1107,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17208/default_183829c5079b84333a720d8590a328efc043ba0e.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -1083,7 +1121,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16036/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
-  detection_source_url: apps/integrations/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
   detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-15 14:50:58.000000000 Z
@@ -1097,8 +1135,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15978/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-03-08 13:00:57.000000000 Z
 - name: npm-run-all
@@ -1111,7 +1149,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15926/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -1125,7 +1163,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15937/default_ac622bc364a601d766b9a6f6039f191492f54d65.png
-  detection_source_url: packages/create-trigger/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/packages/create-trigger/package.json
   detection_source: packages/create-trigger/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-24 13:13:41.000000000 Z
@@ -1139,8 +1177,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16012/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
-  detection_source_url: apps/webapp/package.json
-  detection_source: package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-16 16:28:35.000000000 Z
   vulnerabilities:
@@ -1160,7 +1198,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16086/default_d4e765f8a43dcfd232c8b9ee9732058bc27c727a.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-16 16:28:35.000000000 Z
@@ -1174,7 +1212,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16763/default_6dc099b12d47e378ae121fb53c336fe5d8f0ffc8.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-01 14:46:04.000000000 Z
@@ -1188,7 +1226,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16351/default_4cc3f31b8c64a6268fc123f0965a09d1b11180af.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-02-14 12:24:23.000000000 Z
@@ -1202,7 +1240,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16125/default_def3edb85d7fbd20200a5cd7d0a1679e31bc8b3d.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -1216,7 +1254,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -1230,8 +1268,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: apps/integrations/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/integrations/package.json
+  detection_source: apps/integrations/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-13 14:48:12.000000000 Z
 - name: slug
@@ -1244,8 +1282,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17225/default_c6388e9ebad8a4ea0209a3440636fd19354e82d2.png
-  detection_source_url: apps/webapp/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
 - name: tailwindcss
@@ -1258,8 +1296,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17398/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
-  detection_source_url: apps/webapp/package.json
-  detection_source: package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
+  detection_source: apps/webapp/package.json
   last_updated_by: James Ritchie
   last_updated_on: 2023-02-13 17:43:16.000000000 Z
 - name: tar
@@ -1272,7 +1310,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16466/default_fc6e1fc17e404d936593b5b901d67abb3386daa3.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Matt Aitken
   last_updated_on: 2022-12-06 12:28:16.000000000 Z
@@ -1286,7 +1324,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -1300,7 +1338,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16810/default_55e3ea76a7929df1b71c5ea0c9b4130cc87323a4.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-03 11:26:17.000000000 Z
@@ -1314,8 +1352,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15916/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
-  detection_source_url: apps/wss/package.json
-  detection_source: packages/trigger-sdk/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/wss/package.json
+  detection_source: apps/wss/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2022-12-08 13:53:35.000000000 Z
 - name: yaml
@@ -1328,7 +1366,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17426/default_4036a97a759f3ed3ec649b3a5fa230fe4d064a6a.png
-  detection_source_url: apps/webapp/package.json
+  detection_source_url: https://github.com/jake-watcha/trigger.dev/blob/main/apps/webapp/package.json
   detection_source: apps/webapp/package.json
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z

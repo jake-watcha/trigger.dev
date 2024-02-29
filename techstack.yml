@@ -2,7 +2,7 @@ repo_name: jake-watcha/trigger.dev
 report_id: 2831ac6fbf52d65bdceb3bd2082415bd
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:00:57+00:00'
+timestamp: '2024-02-29T18:28:59+00:00'
 requested_by: ericallam
 provider: github
 branch: main
@@ -273,7 +273,7 @@ tools:
   last_updated_by: Eric Allam
   last_updated_on: 2023-03-07 15:08:02.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.6.2
   license: MIT
@@ -287,7 +287,7 @@ tools:
   last_updated_by: Matt Aitken
   last_updated_on: 2023-02-01 14:46:04.000000000 Z
 - name: Sentry
-  description: 'See performance issues, fix errors faster, and optimize code health. '
+  description: See performance issues, fix errors faster, and optimize code health.
   website_url: https://sentry.io/welcome/?utm_source=stackshare&utm_medium=link&utm_campaign=profile
   open_source: true
   hosted_saas: true
